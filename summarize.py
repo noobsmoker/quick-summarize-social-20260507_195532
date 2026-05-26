@@ -13,6 +13,7 @@ def extractive_summarize(text, num_sentences=3):
     return summary + '.' if not summary.endswith('.') else summary
 
 def main():
+    try:
     parser = argparse.ArgumentParser(description='Quick Summarize - Intelligent text summarization')
     parser.add_argument('input', nargs='?', help='Input text or file path')
     parser.add_argument('-f', '--file', help='Read from file')
